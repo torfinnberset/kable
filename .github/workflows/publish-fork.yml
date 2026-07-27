@@ -1,0 +1,94 @@
+name: Publish (fork)
+
+# Fork-only. Publishes this branch as a real Maven artifact so the Bloomlife patient app can depend on a
+# pinned version of the L2CAP channel support (PR #1231) before it is released upstream.
+#
+# Tag-triggered rather than dispatched, for two reasons: a `workflow_dispatch` is only offered for
+# workflows that exist on the default branch, which this one deliberately does not; and a tag makes every
+# published version reproducible from an immutable ref.
+#
+# Runs the publish on macOS because kable-core declares its Apple targets only on a Mac host — publishing
+# from Linux would silently ship a module with no iOS variants, which the consuming app needs.
+on:
+  push:
+    tags:
+      - '*-l2cap*'
+
+jobs:
+  # kable-core's JVM target depends on the Rust FFI module, so no variant can be published without the
+  # per-platform binaries. Same matrix as the upstream publish workflow.
+  assemble-rust:
+    strategy:
+      fail-fast: false
+      matrix:
+        runner:
+          - macos-15-intel
+          - ubuntu-24.04-arm
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v5
+        with:
+          java-version-file: .sdkmanrc
+      - uses: gradle/actions/setup-gradle@v6
+      - run: ./gradlew :kable-btleplug-ffi:assemble
+      - run: unzip kable-btleplug-ffi.jar && rm -rf META-INF com *.jar
+        working-directory: kable-btleplug-ffi/build/libs
+        shell: bash
+      - uses: actions/upload-artifact@v7
+        with:
+          name: kable-btleplug-ffi-${{ matrix.runner }}
+          path: kable-btleplug-ffi/build/libs/
+          if-no-files-found: error
+          retention-days: 1
+
+  publish:
+    runs-on: macos-latest
+    needs: assemble-rust
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/download-artifact@v8
+        with:
+          path: kable-btleplug-ffi/build/external
+          pattern: kable-btleplug-ffi-*
+          merge-multiple: true
+      - uses: actions/setup-java@v5
+        with:
+          java-version-file: .sdkmanrc
+      - uses: gradle/actions/setup-gradle@v6
+
+      # Signing is off: these artifacts are consumed straight from this repository, not from a registry
+      # that verifies signatures, and the upstream signing key is not available to a fork.
+      - name: publish into build/fork-maven
+        run: >
+          ./gradlew
+          -PVERSION_NAME='${{ github.ref_name }}'
+          -PRELEASE_SIGNING_ENABLED=false
+          publishAllPublicationsToForkRepository
+
+      # Adds to the `maven` branch rather than replacing it: a consumer pinned to an earlier tag must keep
+      # resolving after a newer one is published.
+      - name: commit to the maven branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -eu
+          staging="$(mktemp -d)"
+          cd "$staging"
+          git init -q -b maven
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
+          if git fetch -q --depth 1 origin maven; then
+            git reset -q --hard FETCH_HEAD
+          fi
+          cp -R "${GITHUB_WORKSPACE}/build/fork-maven/." .
+          git add -A
+          git commit -qm 'Publish ${{ github.ref_name }}'
+          git push -q origin maven
+          echo "published ${{ github.ref_name }}"
+          find . -name '*.module' | head -20
