@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-log-engine-khronicle/0.9.3-l2cap.1/kable-log-engine-khronicle-0.9.3-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-log-engine-khronicle",
+    "version": "0.9.3-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.9.3-l2cap.1"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-iosSimulatorArm64Main.klib",
+          "url": "kable-log-engine-khronicle-iossimulatorarm64-0.9.3-l2cap.1.klib",
+          "size": 6978,
+          "sha512": "efffeecd5c52712dac2f1c4d6796c591724588b6fdf23b1f24ab720cf55cd83d50222365a92a536355f7813be05b076219e4015e5898c380eede1971889cf7f7",
+          "sha256": "770627f9a552ef3a46e8f8cadc64cdb63fff1ad95ff15a8dc640580ecbe145b8",
+          "sha1": "bebd1a992e4fc70e0f2d222ea6fa86db1853e288",
+          "md5": "150125cde4256dd0238a8788e1fda80c"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-iossimulatorarm64-sources.jar",
+          "url": "kable-log-engine-khronicle-iossimulatorarm64-0.9.3-l2cap.1-sources.jar",
+          "size": 886,
+          "sha512": "bf594347c10a0509f1051934c4275273a6f9990744caa91e37f972a2f526a0be3cd57173aae42e487d22643aec5be74cba8766b4169c27e7caa33e969e8c45e0",
+          "sha256": "aaaa8333f90eb10b888eaec593ff978ecfabcfb4c8af5bb134208a9e21f96331",
+          "sha1": "3d3a839be03ee2e2570526574ef767d9c55a56c1",
+          "md5": "a0296f1da0ed3f5d0deaf7c96c278b03"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.9.3-l2cap.1"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-iossimulatorarm64-metadata.jar",
+          "url": "kable-log-engine-khronicle-iossimulatorarm64-0.9.3-l2cap.1-metadata.jar",
+          "size": 261,
+          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
+          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
+          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
+          "md5": "f43436d6bec321290f6af228ad602604"
+        }
+      ]
+    }
+  ]
+}

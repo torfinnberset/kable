@@ -1,0 +1,633 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.juul.kable",
+    "module": "kable-log-engine-khronicle",
+    "version": "0.9.3-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.9.3-l2cap.1"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-metadata.jar",
+          "url": "kable-log-engine-khronicle-0.9.3-l2cap.1.jar",
+          "size": 2654,
+          "sha512": "a4c1acf0dda6319f30de648342da3ceb569f2e1d5c5bb9dd57312cfb41d2a0e73d38261c90bca86645fbf29874952d4b394c2bc4bb70a456649ba200f57fb93a",
+          "sha256": "74159dc337ce03684318c09d423d30f8a1d409f484721cea7db86261e4a4d9a3",
+          "sha1": "e54f0778575cf0692da783960e787ff450d2309f",
+          "md5": "4458d12d4dc3d8f49524c769c1ad9088"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-kotlin-sources.jar",
+          "url": "kable-log-engine-khronicle-0.9.3-l2cap.1-sources.jar",
+          "size": 886,
+          "sha512": "bf594347c10a0509f1051934c4275273a6f9990744caa91e37f972a2f526a0be3cd57173aae42e487d22643aec5be74cba8766b4169c27e7caa33e969e8c45e0",
+          "sha256": "aaaa8333f90eb10b888eaec593ff978ecfabcfb4c8af5bb134208a9e21f96331",
+          "sha1": "3d3a839be03ee2e2570526574ef767d9c55a56c1",
+          "md5": "a0296f1da0ed3f5d0deaf7c96c278b03"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-iosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-iosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-iosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iossimulatorarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-iossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iossimulatorarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-iossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iossimulatorarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-iossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iosx64/0.9.3-l2cap.1/kable-log-engine-khronicle-iosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iosx64/0.9.3-l2cap.1/kable-log-engine-khronicle-iosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-iosx64/0.9.3-l2cap.1/kable-log-engine-khronicle-iosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-iosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-js/0.9.3-l2cap.1/kable-log-engine-khronicle-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-js/0.9.3-l2cap.1/kable-log-engine-khronicle-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-js/0.9.3-l2cap.1/kable-log-engine-khronicle-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-jvm/0.9.3-l2cap.1/kable-log-engine-khronicle-jvm-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-jvm",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-jvm/0.9.3-l2cap.1/kable-log-engine-khronicle-jvm-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-jvm",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-jvm/0.9.3-l2cap.1/kable-log-engine-khronicle-jvm-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-jvm",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-macosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-macosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-macosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-macosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-macosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-macosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-macosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-macosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-macosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-macosx64/0.9.3-l2cap.1/kable-log-engine-khronicle-macosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-macosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-macosx64/0.9.3-l2cap.1/kable-log-engine-khronicle-macosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-macosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-macosx64/0.9.3-l2cap.1/kable-log-engine-khronicle-macosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-macosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-wasm-js/0.9.3-l2cap.1/kable-log-engine-khronicle-wasm-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-wasm-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-wasm-js/0.9.3-l2cap.1/kable-log-engine-khronicle-wasm-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-wasm-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-wasm-js/0.9.3-l2cap.1/kable-log-engine-khronicle-wasm-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-wasm-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchosarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchosdevicearm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchosdevicearm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchosdevicearm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchosdevicearm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchosdevicearm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchosdevicearm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchosdevicearm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchosdevicearm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchosdevicearm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchossimulatorarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchossimulatorarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-log-engine-khronicle-watchossimulatorarm64/0.9.3-l2cap.1/kable-log-engine-khronicle-watchossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-log-engine-khronicle-watchossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    }
+  ]
+}

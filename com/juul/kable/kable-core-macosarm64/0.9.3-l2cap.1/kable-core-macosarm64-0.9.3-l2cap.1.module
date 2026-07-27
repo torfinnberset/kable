@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.9.3-l2cap.1/kable-core-0.9.3-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.9.3-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-macosArm64Main.klib",
+          "url": "kable-core-macosarm64-0.9.3-l2cap.1.klib",
+          "size": 317645,
+          "sha512": "3c43a590e072581e858d07599ebd28cb0925e4c1446675cf3d5406648b3fc07136b301191cf4672d71e7958be712b791a262a8997f86242b612b0109e2e2c3ec",
+          "sha256": "38771fe7c582e040d02476df5fd28d5e769701dd8235086dc31748b0a65fe229",
+          "sha1": "79e00f96d7e6d22b7ae6d358c866371e107538d9",
+          "md5": "0e2189feb1f6fe34a31132803bf4df0f"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kable-core-macosarm64-sources.jar",
+          "url": "kable-core-macosarm64-0.9.3-l2cap.1-sources.jar",
+          "size": 79243,
+          "sha512": "63afce872f7ec093ce01f46692da1bf45a09a5d3b0a6314db543ecda5397c27f24e7a7d7f6e9cd54859cea865f702747ac128fbc00325843bb2866290f86dcc1",
+          "sha256": "a81e3ac0742d11c83a99f52fe2cefd3a35e17cc7996b859d877abd4d870b29b2",
+          "sha1": "cfa83fba594c53bbe1c49f5a2321ab5885a8cc6f",
+          "md5": "9d0fb15718f6d9a25443b92e67359505"
+        }
+      ]
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-macosarm64-metadata.jar",
+          "url": "kable-core-macosarm64-0.9.3-l2cap.1-metadata.jar",
+          "size": 29990,
+          "sha512": "a28a951a6737cc4411db7c536eb13bf55f176f06f2daee6276332debb010761513d00f63eefb4448e89e07738c0e6f1a4d1b6a7d38cbe1e5b660a225754b919b",
+          "sha256": "1b057844bdc75867bf9358b01ca04227db9314442a696511bdc77bd3deaa04fa",
+          "sha1": "8cead6de330d752b674a5dc662e1dedcc2abe2aa",
+          "md5": "0cdd9cfc973a31d6a8f712b206f064bd"
+        }
+      ]
+    }
+  ]
+}

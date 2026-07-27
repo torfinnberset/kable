@@ -1,0 +1,715 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.9.3-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "metadataApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-browser"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-web"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-wrappers-bom",
+          "version": {
+            "requires": "2026.7.5"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-metadata.jar",
+          "url": "kable-core-0.9.3-l2cap.1.jar",
+          "size": 68815,
+          "sha512": "2ab47376361663b036b4e36a0bd541419342f4eb45b26c9f7e49c4e35344e1af5d941c8a03de2e84489f900d56541f611a19151e7e8f901c66060e1304d437bb",
+          "sha256": "71677757941e8962245435cc6b9963a4f44c8c7370764a195e65c476f9a02993",
+          "sha1": "7f24c42c2c4dd1a4f8ca117e7d8f8e13e39fc59f",
+          "md5": "e86e0d7632de0347684d5a30aef3a12f"
+        }
+      ]
+    },
+    {
+      "name": "metadataSourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "common"
+      },
+      "files": [
+        {
+          "name": "kable-core-kotlin-sources.jar",
+          "url": "kable-core-0.9.3-l2cap.1-sources.jar",
+          "size": 114403,
+          "sha512": "c3eea9f9bf4b64d7b645aaf00860bfe4a32b70cfa9725433d1217f19de93dde1903e0f41de2450b22beedf3b88e5ff5359a145c106b1bbde907b37c2acae98d3",
+          "sha256": "515fd6fe9271929076e5f4456b4fb4c01c095d25e98903faf0230a7a4b97922c",
+          "sha1": "cfd9121a92df4cd4f97580077ee82dfe20fb15e9",
+          "md5": "9a40e578cd8c8e6e55ee0b2d00646322"
+        }
+      ]
+    },
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kable-core-android/0.9.3-l2cap.1/kable-core-android-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-android",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kable-core-android/0.9.3-l2cap.1/kable-core-android-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-android",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "available-at": {
+        "url": "../../kable-core-android/0.9.3-l2cap.1/kable-core-android-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-android",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iosarm64/0.9.3-l2cap.1/kable-core-iosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iosarm64/0.9.3-l2cap.1/kable-core-iosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iosarm64/0.9.3-l2cap.1/kable-core-iosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iossimulatorarm64/0.9.3-l2cap.1/kable-core-iossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iossimulatorarm64/0.9.3-l2cap.1/kable-core-iossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iossimulatorarm64/0.9.3-l2cap.1/kable-core-iossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iosx64/0.9.3-l2cap.1/kable-core-iosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iosx64/0.9.3-l2cap.1/kable-core-iosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "iosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-iosx64/0.9.3-l2cap.1/kable-core-iosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-iosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kable-core-js/0.9.3-l2cap.1/kable-core-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kable-core-js/0.9.3-l2cap.1/kable-core-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "available-at": {
+        "url": "../../kable-core-js/0.9.3-l2cap.1/kable-core-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kable-core-jvm/0.9.3-l2cap.1/kable-core-jvm-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-jvm",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kable-core-jvm/0.9.3-l2cap.1/kable-core-jvm-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-jvm",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "available-at": {
+        "url": "../../kable-core-jvm/0.9.3-l2cap.1/kable-core-jvm-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-jvm",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-macosarm64/0.9.3-l2cap.1/kable-core-macosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-macosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-macosarm64/0.9.3-l2cap.1/kable-core-macosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-macosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-macosarm64/0.9.3-l2cap.1/kable-core-macosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-macosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosX64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-macosx64/0.9.3-l2cap.1/kable-core-macosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-macosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosX64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-macosx64/0.9.3-l2cap.1/kable-core-macosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-macosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "macosX64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "macos_x64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-macosx64/0.9.3-l2cap.1/kable-core-macosx64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-macosx64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../kable-core-wasm-js/0.9.3-l2cap.1/kable-core-wasm-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-wasm-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../kable-core-wasm-js/0.9.3-l2cap.1/kable-core-wasm-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-wasm-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "available-at": {
+        "url": "../../kable-core-wasm-js/0.9.3-l2cap.1/kable-core-wasm-js-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-wasm-js",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchosarm64/0.9.3-l2cap.1/kable-core-watchosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchosarm64/0.9.3-l2cap.1/kable-core-watchosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchosarm64/0.9.3-l2cap.1/kable-core-watchosarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchosarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchosdevicearm64/0.9.3-l2cap.1/kable-core-watchosdevicearm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchosdevicearm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchosdevicearm64/0.9.3-l2cap.1/kable-core-watchosdevicearm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchosdevicearm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosDeviceArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_device_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchosdevicearm64/0.9.3-l2cap.1/kable-core-watchosdevicearm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchosdevicearm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchossimulatorarm64/0.9.3-l2cap.1/kable-core-watchossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchossimulatorarm64/0.9.3-l2cap.1/kable-core-watchossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    },
+    {
+      "name": "watchosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "available-at": {
+        "url": "../../kable-core-watchossimulatorarm64/0.9.3-l2cap.1/kable-core-watchossimulatorarm64-0.9.3-l2cap.1.module",
+        "group": "com.juul.kable",
+        "module": "kable-core-watchossimulatorarm64",
+        "version": "0.9.3-l2cap.1"
+      }
+    }
+  ]
+}

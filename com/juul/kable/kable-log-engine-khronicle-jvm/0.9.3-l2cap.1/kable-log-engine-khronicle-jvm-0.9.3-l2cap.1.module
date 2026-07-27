@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-log-engine-khronicle/0.9.3-l2cap.1/kable-log-engine-khronicle-0.9.3-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-log-engine-khronicle",
+    "version": "0.9.3-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.6.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.9.3-l2cap.1"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-jvm.jar",
+          "url": "kable-log-engine-khronicle-jvm-0.9.3-l2cap.1.jar",
+          "size": 3445,
+          "sha512": "e5d833fc5b562116a680a730d8a81b794ca73e5d6b18723327b0f211fb61009e6764adcfd5db797627128a0483136d69a9e453709093a6b90def88b766e0c069",
+          "sha256": "d25cfb4460144c6fdece8ca6130fd7861503f0476f75f90de124864377883dd1",
+          "sha1": "8cf9102acbb2d6e97031954b0f84d2a22f416e65",
+          "md5": "246801cae80050c9bbd777a6ca485e8e"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.9.3-l2cap.1"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-jvm.jar",
+          "url": "kable-log-engine-khronicle-jvm-0.9.3-l2cap.1.jar",
+          "size": 3445,
+          "sha512": "e5d833fc5b562116a680a730d8a81b794ca73e5d6b18723327b0f211fb61009e6764adcfd5db797627128a0483136d69a9e453709093a6b90def88b766e0c069",
+          "sha256": "d25cfb4460144c6fdece8ca6130fd7861503f0476f75f90de124864377883dd1",
+          "sha1": "8cf9102acbb2d6e97031954b0f84d2a22f416e65",
+          "md5": "246801cae80050c9bbd777a6ca485e8e"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-jvm-sources.jar",
+          "url": "kable-log-engine-khronicle-jvm-0.9.3-l2cap.1-sources.jar",
+          "size": 886,
+          "sha512": "bf594347c10a0509f1051934c4275273a6f9990744caa91e37f972a2f526a0be3cd57173aae42e487d22643aec5be74cba8766b4169c27e7caa33e969e8c45e0",
+          "sha256": "aaaa8333f90eb10b888eaec593ff978ecfabcfb4c8af5bb134208a9e21f96331",
+          "sha1": "3d3a839be03ee2e2570526574ef767d9c55a56c1",
+          "md5": "a0296f1da0ed3f5d0deaf7c96c278b03"
+        }
+      ]
+    }
+  ]
+}
