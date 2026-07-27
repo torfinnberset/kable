@@ -33,6 +33,23 @@ allprojects {
         mavenCentral()
     }
 
+    // Fork-only. The Bloomlife patient app needs the L2CAP channel support of PR #1231 before it is
+    // released, and the alternatives are worse: a Gradle source dependency cannot build this project at
+    // all (Gradle refuses the nested `includeBuild("uniffi-plugin")`), and a vendored copy of the sources
+    // silently drifts from upstream. Publishing a real artifact from a tag keeps the app on a pinned,
+    // reproducible version. The destination is a plain directory that the publish workflow commits to the
+    // `maven` branch. Delete this block, the workflow, and the branch once #1231 is released.
+    pluginManager.withPlugin("com.vanniktech.maven.publish") {
+        configure<PublishingExtension> {
+            repositories {
+                maven {
+                    name = "fork"
+                    url = rootProject.layout.buildDirectory.dir("fork-maven").get().asFile.toURI()
+                }
+            }
+        }
+    }
+
     listOf(
         org.jetbrains.kotlin.gradle.tasks.Kotlin2JsCompile::class,
         org.jetbrains.kotlin.gradle.tasks.KotlinCompileCommon::class,
