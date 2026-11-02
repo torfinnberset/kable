@@ -13,6 +13,7 @@ import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.asStateFlow
 import platform.CoreBluetooth.CBCentralManager
 import platform.CoreBluetooth.CBCentralManagerDelegateProtocol
+import platform.CoreBluetooth.CBCentralManagerRestoredStatePeripheralsKey
 import platform.CoreBluetooth.CBManagerState
 import platform.CoreBluetooth.CBManagerStateUnknown
 import platform.CoreBluetooth.CBPeripheral
@@ -115,11 +116,16 @@ internal class CentralManagerDelegate : NSObject(), CBCentralManagerDelegateProt
         _state.value = central.state
     }
 
+    private val _restoredPeripherals = MutableStateFlow<List<CBPeripheral>>(emptyList())
+
+    /** The peripherals of the last state restoration. CentralManager.connectedPeripherals gives them. */
+    val restoredPeripherals: StateFlow<List<CBPeripheral>> = _restoredPeripherals.asStateFlow()
+
     override fun centralManager(central: CBCentralManager, willRestoreState: Map<Any?, *>) {
-        // No-op: From the documentation: Tells the delegate the system is about to restore the
-        // central manager, as part of relaunching the app into the background. Use this method to
-        // synchronize the state of your app with the state of the Bluetooth system. Since the rest
-        // of Kable is handling the "synchronize," there's nothing to do here.
+        // CoreBluetooth cancels the connection of a restored peripheral that the app does not keep.
+        _restoredPeripherals.value = (willRestoreState[CBCentralManagerRestoredStatePeripheralsKey] as? List<*>)
+            .orEmpty()
+            .filterIsInstance<CBPeripheral>()
     }
 
     /* Monitoring the Central Manager’s Authorization */
