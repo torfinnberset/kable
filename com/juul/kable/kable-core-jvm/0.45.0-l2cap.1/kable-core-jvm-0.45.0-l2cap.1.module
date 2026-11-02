@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.45.0-l2cap.1/kable-core-0.45.0-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.45.0-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-jvm.jar",
+          "url": "kable-core-jvm-0.45.0-l2cap.1.jar",
+          "size": 291919,
+          "sha512": "8e085ba4a11105a12578b41b1ee189802b61c533c2d00bf80011b35ba0b8829e4772e5b6f8bd327337e233f6d01abdc7b764a1817d0e2358b2b85f9563d2bf9a",
+          "sha256": "8ef4371c8e7a549ff6db00bf6c8ee34f45098a3d9672dae53b0e029e233bbfce",
+          "sha1": "ed3c6eb6f8733f21dbdfcfc3b5873fbc9bef90d2",
+          "md5": "aeeb49d145d7ecef3f0662a025031618"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "com.juul.kable",
+          "module": "kable-btleplug-ffi",
+          "version": {
+            "requires": "0.45.0-l2cap.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-jvm.jar",
+          "url": "kable-core-jvm-0.45.0-l2cap.1.jar",
+          "size": 291919,
+          "sha512": "8e085ba4a11105a12578b41b1ee189802b61c533c2d00bf80011b35ba0b8829e4772e5b6f8bd327337e233f6d01abdc7b764a1817d0e2358b2b85f9563d2bf9a",
+          "sha256": "8ef4371c8e7a549ff6db00bf6c8ee34f45098a3d9672dae53b0e029e233bbfce",
+          "sha1": "ed3c6eb6f8733f21dbdfcfc3b5873fbc9bef90d2",
+          "md5": "aeeb49d145d7ecef3f0662a025031618"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "kable-core-jvm-sources.jar",
+          "url": "kable-core-jvm-0.45.0-l2cap.1-sources.jar",
+          "size": 54502,
+          "sha512": "15f3321cb6e710066968c755cc912ce6f63226fa2fc2d46510caf98497106abbe7712f81238d845a810c4cea71676e8baa8041104e1d3a9a0e3f1a47e4442618",
+          "sha256": "e84d90ada2f1c97505aaf2f10ab617a74810c6b6a7194a97805c20d0d7a97ae3",
+          "sha1": "9781cd6735e1f7a4ce6c0f0d51eeb8139ea2dbec",
+          "md5": "66b69102f2b3f2c4616ca388cbfc4e78"
+        }
+      ]
+    }
+  ]
+}

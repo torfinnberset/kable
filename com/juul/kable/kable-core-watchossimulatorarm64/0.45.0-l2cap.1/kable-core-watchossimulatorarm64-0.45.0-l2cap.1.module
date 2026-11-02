@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.45.0-l2cap.1/kable-core-0.45.0-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.45.0-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "watchosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-watchosSimulatorArm64Main.klib",
+          "url": "kable-core-watchossimulatorarm64-0.45.0-l2cap.1.klib",
+          "size": 318670,
+          "sha512": "7afb9cced9e0124d2042eede3dc7791debb4c4be9a919940073895c3e2667136af69a9436b92cbea92fbed0797de194bf5f8a27b1db76a7d7bf21d9249f53372",
+          "sha256": "5f50674594adaa8c9e63da02dca6572bbe0a778a1a1291eec8d3a4400d06a0c8",
+          "sha1": "73bb17d3c3044f868c5d89e17829b51c3d2772a9",
+          "md5": "56f894f7090514d9d74c20235ae7b737"
+        }
+      ]
+    },
+    {
+      "name": "watchosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kable-core-watchossimulatorarm64-sources.jar",
+          "url": "kable-core-watchossimulatorarm64-0.45.0-l2cap.1-sources.jar",
+          "size": 79386,
+          "sha512": "1323a541899d05c559c79dd7d7727ed4949440992509caca229ad6c5723acd139eea1d5b86e3feeade22a1e08621dbd5d79643ecf386498465b767bb7e68c6a1",
+          "sha256": "d3a3a82d892ad096b7fcc94180830acd821a2f08c6267aa1e60c4ad15f803296",
+          "sha1": "0472400fb7806e06ea44073eaac07e03090d5340",
+          "md5": "3e5fabe379b71de7f9f3090848b19c9a"
+        }
+      ]
+    },
+    {
+      "name": "watchosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "watchos_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-watchossimulatorarm64-metadata.jar",
+          "url": "kable-core-watchossimulatorarm64-0.45.0-l2cap.1-metadata.jar",
+          "size": 30411,
+          "sha512": "774346b4e81e3154c1f57c343ea2dcf89ec4e10aff95b825ad2a311c40ad2059ad4c39434869616460af04ca1f1a6dc2b3b4f6d6ffdfc285033c02c50dcb7060",
+          "sha256": "1b519167c767a5a7cc32d51ab078315bb2d9cfb76cecbd03c1d7f8473d8f642c",
+          "sha1": "63226f0a89e8f3b14654e3bd49aa9153ce8621b2",
+          "md5": "7d0853ef6d62579d307ed5fe407db4af"
+        }
+      ]
+    }
+  ]
+}

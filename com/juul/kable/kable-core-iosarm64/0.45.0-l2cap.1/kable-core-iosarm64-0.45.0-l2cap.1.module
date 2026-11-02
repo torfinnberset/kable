@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.45.0-l2cap.1/kable-core-0.45.0-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.45.0-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-iosArm64Main.klib",
+          "url": "kable-core-iosarm64-0.45.0-l2cap.1.klib",
+          "size": 318578,
+          "sha512": "8d7a4753d565ba1736a304571e2baea2645a3a9b10c6afb49d8501a6c2f7725d2c294b19f3e9b6fb700c5cf74669bcc008a82e851c5cb2cf0dc338dba074c461",
+          "sha256": "4ab50c514316012a10d245defc9a49edf7a166c5d77261ef27e56858e8e51d1f",
+          "sha1": "7546bf8ae9170b9f001f4e47dbf0fe93b0d8183e",
+          "md5": "ccc27928189d36ff2676ac3c1afc2545"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kable-core-iosarm64-sources.jar",
+          "url": "kable-core-iosarm64-0.45.0-l2cap.1-sources.jar",
+          "size": 79386,
+          "sha512": "1323a541899d05c559c79dd7d7727ed4949440992509caca229ad6c5723acd139eea1d5b86e3feeade22a1e08621dbd5d79643ecf386498465b767bb7e68c6a1",
+          "sha256": "d3a3a82d892ad096b7fcc94180830acd821a2f08c6267aa1e60c4ad15f803296",
+          "sha1": "0472400fb7806e06ea44073eaac07e03090d5340",
+          "md5": "3e5fabe379b71de7f9f3090848b19c9a"
+        }
+      ]
+    },
+    {
+      "name": "iosArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-iosarm64-metadata.jar",
+          "url": "kable-core-iosarm64-0.45.0-l2cap.1-metadata.jar",
+          "size": 30411,
+          "sha512": "774346b4e81e3154c1f57c343ea2dcf89ec4e10aff95b825ad2a311c40ad2059ad4c39434869616460af04ca1f1a6dc2b3b4f6d6ffdfc285033c02c50dcb7060",
+          "sha256": "1b519167c767a5a7cc32d51ab078315bb2d9cfb76cecbd03c1d7f8473d8f642c",
+          "sha1": "63226f0a89e8f3b14654e3bd49aa9153ce8621b2",
+          "md5": "7d0853ef6d62579d307ed5fe407db4af"
+        }
+      ]
+    }
+  ]
+}
