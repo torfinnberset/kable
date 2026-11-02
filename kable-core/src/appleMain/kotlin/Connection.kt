@@ -199,7 +199,7 @@ internal class Connection(
         val result = try {
             withContext(NonCancellable) { pending.await() }
         } catch (e: Throwable) {
-            coroutineContext.ensureActive()
+            currentCoroutineContext().ensureActive()
             throw e
         }
 
@@ -207,9 +207,9 @@ internal class Connection(
         // abandon(), not close(): close()'s deterministic collection is futile here, because this very
         // frame still pins the channel (via `pending`/`result`) until it dies — the channel can only be
         // collected after this function has thrown, which abandon()'s teardown-then-GC.schedule() allows.
-        if (!coroutineContext.isActive) {
+        if (!currentCoroutineContext().isActive) {
             result.channel?.let { AppleL2CapSocket(it).abandon() }
-            coroutineContext.ensureActive()
+            currentCoroutineContext().ensureActive()
         }
 
         buildL2CapSocket(result)
