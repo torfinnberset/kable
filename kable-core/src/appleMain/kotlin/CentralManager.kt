@@ -2,11 +2,14 @@ package com.juul.kable
 
 import com.juul.kable.logs.Logging
 import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withContext
 import platform.CoreBluetooth.CBCentralManager
 import platform.CoreBluetooth.CBCharacteristic
 import platform.CoreBluetooth.CBCharacteristicWriteType
+import platform.CoreBluetooth.CBManagerStatePoweredOn
 import platform.CoreBluetooth.CBPeripheral
+import platform.CoreBluetooth.CBPeripheralStateConnected
 import platform.Foundation.NSData
 import kotlin.concurrent.AtomicReference
 import kotlin.coroutines.CoroutineContext
@@ -43,6 +46,24 @@ public class CentralManager internal constructor(
             check(!lazyDefault.isInitialized()) { "Cannot configure CentralManager, it has already initialized." }
             configuration.value = Configuration.Builder().apply(builderAction).build()
         }
+
+        /**
+         * Creates the default central manager now, with the configuration of [configure]. For state
+         * restoration, the app creates its central manager while it launches, so that CoreBluetooth
+         * can give it the restored peripherals.
+         */
+        public fun initialize() {
+            Default
+        }
+
+        /**
+         * Waits until Bluetooth is powered on, then returns the peripherals that the system holds
+         * connected for this app: the connected peripherals of a state restoration, and the
+         * connected peripherals that have one of [services]. A peripheral that the system holds
+         * connected does not advertise, so a scan cannot find it.
+         */
+        public suspend fun connectedPeripherals(services: List<Uuid>): List<CBPeripheral> =
+            Default.connectedPeripherals(services)
     }
 
     internal val dispatcher = QueueDispatcher(DISPATCH_QUEUE_LABEL)
@@ -65,6 +86,19 @@ public class CentralManager internal constructor(
         // Check scanning state to prevent API misuse warning.
         // https://github.com/JuulLabs/kable/issues/81
         if (cbCentralManager.isScanning) cbCentralManager.stopScan()
+    }
+
+    private suspend fun connectedPeripherals(services: List<Uuid>): List<CBPeripheral> {
+        delegate.state.first { it == CBManagerStatePoweredOn }
+        return withContext(dispatcher) {
+            val connectedWithServices = cbCentralManager
+                .retrieveConnectedPeripheralsWithServices(services.map { it.toCBUUID() })
+                .filterIsInstance<CBPeripheral>()
+            // A restored peripheral can lose its link after the restoration. Return only the connected ones.
+            (delegate.restoredPeripherals.value + connectedWithServices)
+                .distinctBy { it.identifier }
+                .filter { it.state == CBPeripheralStateConnected }
+        }
     }
 
     internal fun retrievePeripheral(withIdentifier: Uuid): CBPeripheral? =
