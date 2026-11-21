@@ -1,0 +1,130 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.juul.kable",
+    "module": "kable-btleplug-ffi",
+    "version": "0.46.0-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.9.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna",
+          "version": {
+            "requires": "5.19.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-btleplug-ffi-0.46.0-l2cap.1.jar",
+          "url": "kable-btleplug-ffi-0.46.0-l2cap.1.jar",
+          "size": 4416946,
+          "sha512": "e4ddf29001be0aee0dff27da638da28291e87b758933e797ca3b1dff945d309dd16e43096c2764a30d763e1f6c823c14be565ff17200b0981ff3d1474702fed6",
+          "sha256": "dcb005ee5448adc8b9cf4c3a67adc60cab7abf5e68782ca93ea2dd2374704248",
+          "sha1": "b85e1cf87c3e455882231a42ae5375438ea3cb0b",
+          "md5": "54dec2d1fa8b49337999a9bdeef2daa5"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "net.java.dev.jna",
+          "module": "jna",
+          "version": {
+            "requires": "5.19.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-btleplug-ffi-0.46.0-l2cap.1.jar",
+          "url": "kable-btleplug-ffi-0.46.0-l2cap.1.jar",
+          "size": 4416946,
+          "sha512": "e4ddf29001be0aee0dff27da638da28291e87b758933e797ca3b1dff945d309dd16e43096c2764a30d763e1f6c823c14be565ff17200b0981ff3d1474702fed6",
+          "sha256": "dcb005ee5448adc8b9cf4c3a67adc60cab7abf5e68782ca93ea2dd2374704248",
+          "sha1": "b85e1cf87c3e455882231a42ae5375438ea3cb0b",
+          "md5": "54dec2d1fa8b49337999a9bdeef2daa5"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "kable-btleplug-ffi-0.46.0-l2cap.1-sources.jar",
+          "url": "kable-btleplug-ffi-0.46.0-l2cap.1-sources.jar",
+          "size": 22068,
+          "sha512": "3e052d8a668f03b78b10d17c9f00645205f765ab0fa61ab1a0a1e00f722f6f35ff51a3711ae18ea9db9ed05cc9c6ef4c8a2320cbf2e979dfe443b920b30fd27d",
+          "sha256": "2b80d6c7c9cccea30095e102a9d07ed296c45d31b3d0a6192255e94f666eedbc",
+          "sha1": "4be368a0673eab4c8e497d0db7230ff2ccc492a8",
+          "md5": "84f0c79d960538a2d3e4cb384d85e8e2"
+        }
+      ]
+    }
+  ]
+}

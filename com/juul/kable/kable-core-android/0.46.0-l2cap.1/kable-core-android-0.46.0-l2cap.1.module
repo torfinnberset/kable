@@ -1,0 +1,179 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.46.0-l2cap.1/kable-core-0.46.0-l2cap.1.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.46.0-l2cap.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.9.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "androidApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core.aar",
+          "url": "kable-core-android-0.46.0-l2cap.1.aar",
+          "size": 436063,
+          "sha512": "44b2e6e7f21a7233d57d6b64a9713e9e1c1ceda670a1ecc2d4ec0f216ee74287faeeeae06f319b4fa0e9526420e1857df8851d467f5638177c8c86c9af7c74a2",
+          "sha256": "85bba4f42fce7b4d9f96f7f9125d41562a394e6405778914d832ad1c3bbb4f6f",
+          "sha1": "9430edd85798b117b922481ddae2c8880cdd372e",
+          "md5": "7ddf7c55e59d55ecb09745708d6f0494"
+        }
+      ]
+    },
+    {
+      "name": "androidRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.16.0"
+          }
+        },
+        {
+          "group": "androidx.startup",
+          "module": "startup-runtime",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-parcelize-runtime",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "com.juul.tuulbox",
+          "module": "coroutines",
+          "version": {
+            "requires": "8.1.1"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core.aar",
+          "url": "kable-core-android-0.46.0-l2cap.1.aar",
+          "size": 436063,
+          "sha512": "44b2e6e7f21a7233d57d6b64a9713e9e1c1ceda670a1ecc2d4ec0f216ee74287faeeeae06f319b4fa0e9526420e1857df8851d467f5638177c8c86c9af7c74a2",
+          "sha256": "85bba4f42fce7b4d9f96f7f9125d41562a394e6405778914d832ad1c3bbb4f6f",
+          "sha1": "9430edd85798b117b922481ddae2c8880cdd372e",
+          "md5": "7ddf7c55e59d55ecb09745708d6f0494"
+        }
+      ]
+    },
+    {
+      "name": "androidSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "android",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "androidJvm"
+      },
+      "files": [
+        {
+          "name": "kable-core-android-sources.jar",
+          "url": "kable-core-android-0.46.0-l2cap.1-sources.jar",
+          "size": 84357,
+          "sha512": "3ce2ead6ff69c5410e1930340959ff2aa23c2731bddc73630607a843f124a028fa381a19adfb595f2c969a7e02717b20b037ae695ac2ce4dfe6f548dc32d6ca1",
+          "sha256": "4d552d1904310387b5f66c98740f4f270592c402594d901c25065239ca8e4a94",
+          "sha1": "e436f8797faef3742e133300bb3d0d800956ea9d",
+          "md5": "c1e9e414150e468ab14a4dbe8345710d"
+        }
+      ]
+    }
+  ]
+}
