@@ -39,7 +39,6 @@ import com.juul.kable.logs.Logging
 import com.juul.kable.logs.Logging.DataProcessor.Operation
 import com.juul.kable.logs.detail
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -47,7 +46,6 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.filter
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import kotlinx.coroutines.withContext
 import java.io.IOException
 import kotlin.coroutines.cancellation.CancellationException
 import kotlin.time.Duration
@@ -239,20 +237,10 @@ internal class BluetoothDeviceAndroidPeripheral(
         } catch (e: IOException) {
             throw e.toL2CapException()
         }
-        try {
-            withContext(Dispatchers.IO) { socket.connect() }
-        } catch (e: CancellationException) {
-            socket.closeOrLog()
-            throw e
-        } catch (e: IOException) {
-            socket.closeOrLog()
-            throw e.toL2CapException()
-        }
+        socket.connectOrClose { closeOrLog() }
         return AndroidL2CapSocket(socket, logging)
     }
 
-    // BluetoothSocket.close() aborts an in-progress connect, so a failed or cancelled open never leaks
-    // the socket (connect() is a blocking call that a cancelled coroutine cannot interrupt).
     private fun BluetoothSocket.closeOrLog() {
         try {
             close()
