@@ -1,0 +1,187 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.46.0-l2cap.2/kable-core-0.46.0-l2cap.2.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.46.0-l2cap.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.9.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "wasmJsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-browser"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-web"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-wrappers-bom",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-wasm-js.klib",
+          "url": "kable-core-wasm-js-0.46.0-l2cap.2.klib",
+          "size": 259214,
+          "sha512": "8415a08a26e9935dd5cf89e220dbbfa7e6113c0ce0f8bca87373e62207e7a0d81df36374bbb5c7884b79518a11e851c186a7adefebaf11aadb0ef21608b3ca82",
+          "sha256": "758807ceba1d838979f9212a16f9f27f1efaffa050cd501c32f74433f200a90b",
+          "sha1": "04887e673981c16bb2a641c3ba0844b235102a4e",
+          "md5": "09079b06f7b471274b680459a3540749"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-browser"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-web"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-wrappers-bom",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-wasm-js.klib",
+          "url": "kable-core-wasm-js-0.46.0-l2cap.2.klib",
+          "size": 259214,
+          "sha512": "8415a08a26e9935dd5cf89e220dbbfa7e6113c0ce0f8bca87373e62207e7a0d81df36374bbb5c7884b79518a11e851c186a7adefebaf11aadb0ef21608b3ca82",
+          "sha256": "758807ceba1d838979f9212a16f9f27f1efaffa050cd501c32f74433f200a90b",
+          "sha1": "04887e673981c16bb2a641c3ba0844b235102a4e",
+          "md5": "09079b06f7b471274b680459a3540749"
+        }
+      ]
+    },
+    {
+      "name": "wasmJsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.platform.type": "wasm",
+        "org.jetbrains.kotlin.wasm.target": "js"
+      },
+      "files": [
+        {
+          "name": "kable-core-wasm-js-sources.jar",
+          "url": "kable-core-wasm-js-0.46.0-l2cap.2-sources.jar",
+          "size": 79540,
+          "sha512": "bb35196e5697ea9c236786f5c178282b976da5acf1e2ff903e6805e53bcbb1fe0706777873f19bdf9b3d80ff76effb17e88427751ef12822f46f564e2b7c8f4d",
+          "sha256": "27e4cf50561a5f64a987722171723e19cf71d9d48181ca6e78eb0113784e670e",
+          "sha1": "525cf885cd00d0ef1635e9dd26f34dcbda428fda",
+          "md5": "2d1725b157903acf71f732a60e2d05c2"
+        }
+      ]
+    }
+  ]
+}

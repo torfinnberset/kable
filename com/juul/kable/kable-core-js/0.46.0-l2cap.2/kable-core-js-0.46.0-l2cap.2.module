@@ -1,0 +1,201 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.46.0-l2cap.2/kable-core-0.46.0-l2cap.2.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.46.0-l2cap.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.9.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-browser"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-web"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-wrappers-bom",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-js.klib",
+          "url": "kable-core-js-0.46.0-l2cap.2.klib",
+          "size": 258567,
+          "sha512": "977af09cc2937d01ea0bea0c4f0813dcba73f7858e0ae56d69055cf36d4ccd1afa1a1d46c18129c13acee8b290548d332be90f905b8b81e080c78bb0f98e20f9",
+          "sha256": "b1da6d1fba85310bc57d028aa682a7011131b36ca6a6b2b99b347416c8ab9bd5",
+          "sha1": "0328895032c84f845b4306f7fe43efb6144c8830",
+          "md5": "ac1dd280f58a7a351e4c145cf3d665a8"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-browser",
+          "version": {
+            "requires": "0.5.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-browser"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-web"
+        },
+        {
+          "group": "org.jetbrains.kotlin-wrappers",
+          "module": "kotlin-wrappers-bom",
+          "version": {
+            "requires": "2026.11.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-js.klib",
+          "url": "kable-core-js-0.46.0-l2cap.2.klib",
+          "size": 258567,
+          "sha512": "977af09cc2937d01ea0bea0c4f0813dcba73f7858e0ae56d69055cf36d4ccd1afa1a1d46c18129c13acee8b290548d332be90f905b8b81e080c78bb0f98e20f9",
+          "sha256": "b1da6d1fba85310bc57d028aa682a7011131b36ca6a6b2b99b347416c8ab9bd5",
+          "sha1": "0328895032c84f845b4306f7fe43efb6144c8830",
+          "md5": "ac1dd280f58a7a351e4c145cf3d665a8"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "kable-core-js-sources.jar",
+          "url": "kable-core-js-0.46.0-l2cap.2-sources.jar",
+          "size": 79325,
+          "sha512": "eb2076c700e258fdf391cf989c1dbcc5b03a4d3daba9eabe286f1fe90686607b95d76f3d7a581de246f4b82aa0a73baa269df128f71b8db6d97fb24ab052e545",
+          "sha256": "6acc3597f77f4d840c958793e8f9ac9c9145037d031eac869697407ca681b3d6",
+          "sha1": "425f83727a4433c946f7038042a7f5533543acf4",
+          "md5": "d126e83c846fe06d4271645853498ffa"
+        }
+      ]
+    }
+  ]
+}

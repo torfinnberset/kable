@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-log-engine-khronicle/0.46.0-l2cap.2/kable-log-engine-khronicle-0.46.0-l2cap.2.module",
+    "group": "com.juul.kable",
+    "module": "kable-log-engine-khronicle",
+    "version": "0.46.0-l2cap.2",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.9.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jsApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.46.0-l2cap.2"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-js.klib",
+          "url": "kable-log-engine-khronicle-js-0.46.0-l2cap.2.klib",
+          "size": 6597,
+          "sha512": "f5379905e332a144a98f3c3fcb5084ebea8c782407438e05452a6bfc42a7c8f59f5de7e1bc4cbb3783d27aee1b34035ad9e811c2912a5ddc876a6728d4bb2010",
+          "sha256": "ad1e4c07acb4ec5a51978f29eef39512fa6d2e42616d0dd1da67091fdd573a81",
+          "sha1": "0b146b2189d5158209b05178ffee8ed9ba2b4b15",
+          "md5": "4a56b339026def989202289d003c9b13"
+        }
+      ]
+    },
+    {
+      "name": "jsRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-dom-api-compat",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "com.juul.kable",
+          "module": "kable-core",
+          "version": {
+            "requires": "0.46.0-l2cap.2"
+          }
+        },
+        {
+          "group": "com.juul.khronicle",
+          "module": "khronicle-core",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-js.klib",
+          "url": "kable-log-engine-khronicle-js-0.46.0-l2cap.2.klib",
+          "size": 6597,
+          "sha512": "f5379905e332a144a98f3c3fcb5084ebea8c782407438e05452a6bfc42a7c8f59f5de7e1bc4cbb3783d27aee1b34035ad9e811c2912a5ddc876a6728d4bb2010",
+          "sha256": "ad1e4c07acb4ec5a51978f29eef39512fa6d2e42616d0dd1da67091fdd573a81",
+          "sha1": "0b146b2189d5158209b05178ffee8ed9ba2b4b15",
+          "md5": "4a56b339026def989202289d003c9b13"
+        }
+      ]
+    },
+    {
+      "name": "jsSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.js.compiler": "ir",
+        "org.jetbrains.kotlin.platform.type": "js"
+      },
+      "files": [
+        {
+          "name": "kable-log-engine-khronicle-js-sources.jar",
+          "url": "kable-log-engine-khronicle-js-0.46.0-l2cap.2-sources.jar",
+          "size": 886,
+          "sha512": "bf594347c10a0509f1051934c4275273a6f9990744caa91e37f972a2f526a0be3cd57173aae42e487d22643aec5be74cba8766b4169c27e7caa33e969e8c45e0",
+          "sha256": "aaaa8333f90eb10b888eaec593ff978ecfabcfb4c8af5bb134208a9e21f96331",
+          "sha1": "3d3a839be03ee2e2570526574ef767d9c55a56c1",
+          "md5": "a0296f1da0ed3f5d0deaf7c96c278b03"
+        }
+      ]
+    }
+  ]
+}
