@@ -197,7 +197,11 @@ internal class Connection(
         }
 
         val result = try {
-            withContext(NonCancellable) { pending.await() }
+            awaitL2CapOpen(
+                pending = pending,
+                endConnection = { dispose(NotConnectedException("L2CAP open cancelled")) },
+                abandon = { it.channel?.let { channel -> AppleL2CapSocket(channel).abandon() } },
+            )
         } catch (e: Throwable) {
             currentCoroutineContext().ensureActive()
             throw e
