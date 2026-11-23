@@ -1,0 +1,144 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../kable-core/0.46.0-l2cap.3/kable-core-0.46.0-l2cap.3.module",
+    "group": "com.juul.kable",
+    "module": "kable-core",
+    "version": "0.46.0-l2cap.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.9.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "iosSimulatorArm64ApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-api",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-iosSimulatorArm64Main.klib",
+          "url": "kable-core-iossimulatorarm64-0.46.0-l2cap.3.klib",
+          "size": 319137,
+          "sha512": "19e47cf08d2424026fad327ad7de9352c4831849dd6e64633be88b79b856a2f3a3199737dbf0e16a5e0d839072fb8a919d767e561bef902d0267aa84bb7b6452",
+          "sha256": "8cf806a1c93a1ab6c66b1c566c98496ee68a6687d5d83ae6930c76e0e556505d",
+          "sha1": "ae7c38be4545aced4b11c80f7c5dae4c7e772fa4",
+          "md5": "2c1a7599ed4e403d6d4fbb252d5afb5e"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64SourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-runtime",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "files": [
+        {
+          "name": "kable-core-iossimulatorarm64-sources.jar",
+          "url": "kable-core-iossimulatorarm64-0.46.0-l2cap.3-sources.jar",
+          "size": 80250,
+          "sha512": "b03ed67d6828605025a3880b35e6dbdf486895cf8ff3fff19cf31dc77dccd2f4f13fade36dc56b809eb987895c8a621c8b4e67835702c3349d7dd856ee87260b",
+          "sha256": "9603eb55532da9b7c25355c971cb569986be120eade49976fea50bba63b2aa82",
+          "sha1": "847e0e36654e4741e01ce87ff76418e3810cc914",
+          "md5": "ad651c0fd89d0cdb26fd7eb7f0b69e8b"
+        }
+      ]
+    },
+    {
+      "name": "iosSimulatorArm64MetadataElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "non-jvm",
+        "org.gradle.usage": "kotlin-metadata",
+        "org.jetbrains.kotlin.native.target": "ios_simulator_arm64",
+        "org.jetbrains.kotlin.platform.type": "native"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-io-core",
+          "version": {
+            "requires": "0.9.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "atomicfu",
+          "version": {
+            "requires": "0.33.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "kable-core-iossimulatorarm64-metadata.jar",
+          "url": "kable-core-iossimulatorarm64-0.46.0-l2cap.3-metadata.jar",
+          "size": 31040,
+          "sha512": "7e0df25fb889fd9e477bbbd0ba7cec981c098fcdc6118854115662328ed4175eda53fb64f227297c479fe133b58dc47e60fbadc5294017df0fe58b21a5044b68",
+          "sha256": "3ed8dcb7a976f27d61023af82d487af54a1542a6eaa6eb01d4363bcfd0f39d29",
+          "sha1": "80c7a584e5c2ad98259e4109757733aa08176402",
+          "md5": "1462731a49ee58b1be33be347eecfd62"
+        }
+      ]
+    }
+  ]
+}
